@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Gradient Background</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="gradient-container">
+	<h1 style="color:yellow;">Welcome to our Website.</h1>
+	<p style="color:red;">This is a simple website with a blue gradient background.</p>
+    </div>
+    <div id="image-container">
+        <img id="dynamic-image" src="default-image.jpg" alt="Default Image">
+    </div>
+
+    <!-- Button to Change Image -->
+    <button onclick="changeImage()">Change Image</button>
+
+    <!-- JavaScript to Handle Image Change -->
+    <script>
+        // Array of image URLs
+        const imageUrls = [
+            "image1.jpeg",
+            "image2.jpeg",
+            "image3.jpeg"
+            // Add more image URLs as needed
+        ];
+
+        let currentImageIndex = 0;
+        const dynamicImage = document.getElementById("dynamic-image");
+
+        function changeImage() {
+            currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+            dynamicImage.src = imageUrls[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

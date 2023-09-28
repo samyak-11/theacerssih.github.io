@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Preference Form</title>
+     <link rel="stylesheet" href="stylesss.css">
+</head>
+<body>
+    <h1>Tell Us Your Tourism Preferences</h1>
+    <p>Please fill out the form given below so that we can recommend you the best places to visit which are not so known.  .</p>
+
+    <form action="submit_preferences.php" method="post">
+        <!-- Destination Preference -->
+        
+	<label for="destination">Your Name:</label>
+        <input type="text" id="destination" name="destination" required>
+
+	<label for="destination">E-Mail:</label>
+        <input type="text" id="destination" name="destination" required>
+	
+	
+	<label for="destination">Preferred Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <!-- Travel Dates -->
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date" required>
+
+        <!-- Interests -->
+        <label for="interests">Interests (select all that apply):</label>
+        <div>
+            <input type="checkbox" id="beach" name="interests[]" value="Beach">
+            <label for="beach">Beach</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mountains" name="interests[]" value="Mountains">
+            <label for="mountains">Mountains</label>
+        </div>
+        <div>
+            <input type="checkbox" id="culture" name="interests[]" value="Culture">
+            <label for="cultural">Culture</label>
+        </div>
+        <div>
+            <input type="checkbox" id="adventure" name="interests[]" value="Adventure">
+            <label for="adventure">Adventure</label>
+        </div>
+
+        <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Preferences</button>
+    </form>
+</body>
+</html>

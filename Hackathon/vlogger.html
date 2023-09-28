@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="st.css">
+    <title>Vlogger Upload Page</title>
+</head>
+<body>
+	
+    <header>
+        <h1>Vlogger Upload Page</h1>
+        <nav>
+            <ul>
+                <li><a href="SIHHACKATHON.html">Home</a></li>
+		<li><a href="loginpage.html">Login</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="preferenceform.html">Your Preference</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="video-upload">
+        <h2>Upload Your Video</h2>
+        <form action="upload_handler.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="videoFile" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <section class="video-list">
+        <h2>Video List</h2>
+        <div class="video">
+            <video controls>
+                <source src="sample_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+      		<div class="input-group">
+                    <label for="rating">Rating:</label>
+                    <input type="rating" id="rating" name="rating" required>
+               </div>
+		<div class="input-group">
+                    <button type="submit"><a href="SIHHACKATHON.html">Submit</a>``
+                </div>
+        <!-- Add more video entries here -->
+    </section>
+</body>
+</html>
